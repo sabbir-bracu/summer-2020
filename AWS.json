@@ -1,0 +1,47 @@
+{
+    "EntityRecognizerProperties": {
+        "EntityRecognizerArn": "arn:aws:comprehend:us-east-2:953728715460:entity-recognizer/Sabbir5",
+        "LanguageCode": "en",
+        "Status": "TRAINED",
+        "SubmitTime": "2021-07-17T21:55:37.653Z",
+        "EndTime": "2021-07-17T22:08:05.063Z",
+        "TrainingStartTime": "2021-07-17T22:00:06.935Z",
+        "TrainingEndTime": "2021-07-17T22:06:28.174Z",
+        "InputDataConfig": {
+            "DataFormat": "COMPREHEND_CSV",
+            "EntityTypes": [
+                {
+                    "Type": "DEVICE"
+                }
+            ],
+            "Documents": {
+                "S3Uri": "s3://entity-recognition-data/documents.txt",
+                "InputFormat": "ONE_DOC_PER_LINE"
+            },
+            "Annotations": {
+                "S3Uri": "s3://entity-recognition-data/comprehend.csv"
+            }
+        },
+        "RecognizerMetadata": {
+            "NumberOfTrainedDocuments": 1836,
+            "NumberOfTestDocuments": 289,
+            "EvaluationMetrics": {
+                "Precision": 83.7037037037037,
+                "Recall": 97.41379310344827,
+                "F1Score": 90.0398406374502
+            },
+            "EntityTypes": [
+                {
+                    "Type": "DEVICE",
+                    "EvaluationMetrics": {
+                        "Precision": 83.7037037037037,
+                        "Recall": 97.41379310344827,
+                        "F1Score": 90.0398406374502
+                    },
+                    "NumberOfTrainMentions": 918
+                }
+            ]
+        },
+        "DataAccessRoleArn": "arn:aws:iam::953728715460:role/service-role/AmazonComprehendServiceRole-BadSabbir"
+    }
+}
